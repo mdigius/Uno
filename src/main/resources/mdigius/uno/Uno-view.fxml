@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: Maroon;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mdigius.uno.Controllers.UnoController">
+   <children>
+      <MenuBar fx:id="mainMenu" prefHeight="28.0" prefWidth="1280.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onClose" text="Close" />
+                  <MenuItem mnemonicParsing="false" onAction="#onLogin" text="Login" />
+                  <MenuItem mnemonicParsing="false" onAction="#onCreateUser" text="Create User" />
+                  <MenuItem mnemonicParsing="false" onAction="#onDelete" text="Delete User" />
+            </items>
+          </Menu>
+            <Menu fx:id="playMenu" mnemonicParsing="false" text="Play" visible="false">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#onPlay" text="Play Uno!" />
+              </items>
+            </Menu>
+            <Menu fx:id="userMenu" mnemonicParsing="false" text="User" visible="false">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#onStats" text="Stats" />
+                  <MenuItem mnemonicParsing="false" onAction="#onLogout" text="Logout" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="329.0" fitWidth="544.0" layoutX="411.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/icons/UnoLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

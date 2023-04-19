@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: Maroon;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mdigius.uno.GameView">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="573.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/cards/card_back_alt.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="topCard" fitHeight="150.0" fitWidth="200.0" layoutX="660.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/cards/blue_reverse.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="98.0" layoutY="504.0" prefHeight="151.0" prefWidth="1100.0" style="-fx-border-color: white; -fx-border-width: 3;" />
+   </children>
+</Pane>
